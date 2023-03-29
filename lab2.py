@@ -7,11 +7,11 @@ print("\____/___/\__/__/__/\n")
 print("-"*50)
 print("\n")
 
-def takeInput(a,b,sign_):
+def takeInput(**arg):
     a=int(input("Enter a number "))
-    b=input("Enter second number")
-    sign_=input("Select an operator")
-    return a,b,sign_
+    b=int(input("Enter second number "))
+    sign_=str(input("Select an operator (/,*,-,+) "))
+    return [a,b,sign_]
 
 def displayResult(ar,br,sign_r):
     output=0
@@ -24,3 +24,9 @@ def displayResult(ar,br,sign_r):
     elif sign_r=="/":
         output=ar/br
     print(f"{ar} {sign_r} {br} = {output}")
+
+list_=takeInput()
+a=list_[0]
+b=list_[1]
+c=list_[2]
+output2=displayResult(a,b,c)
