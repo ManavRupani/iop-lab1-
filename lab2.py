@@ -1,3 +1,12 @@
+print("-"*50)
+print("    _______  _______")
+print("  //       \/       \\           22055532")
+print(" //        /        //")
+print("/        _/         /           Output ↓")
+print("\____/___/\__/__/__/\n")
+print("-"*50)
+print("\n")
+
 def takeInput(a,b,sign_):
     a=int(input("Enter a number "))
     b=input("Enter second number")
