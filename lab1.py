@@ -5,25 +5,25 @@
 count=0
 tax=0
 output=0
-print(("Melanie Dental Clinic").center(100))
+print(("Melanie Dental Clinic").center(100))            #takinginputs 
 p_name=input(("Enter patient's name: "))
 cl=input("Was cleaning performed? (y/n): ")
 cv=input("Was cavity-filling performed? (y/n): ") 
 x_ray=input("Was X-Ray performed? (y/n): ")
-if cl=="y":
+if cl=="y":                                         #basic operatation
     count+=60
 if cv=="y":
     count+=200
 if x_ray=="y":
     count+=100
 
-if count>300:
+if count>300:                                      #counting discount 
     count=count-count*(0.10)
 elif count>200:
     count=count-count*(0.5)
 else:
     pass
-output=count*0.15
+output=count*0.15                                   #adding tex 
 print("\n")
 print("Melanie Dental Clinic")
 print(("-"*100).center(100))
