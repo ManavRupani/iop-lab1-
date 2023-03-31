@@ -15,8 +15,7 @@ DIME_VALUE = 10
 QUARTER_VALUE = 25
 PENNIES_IN_DOLLAR = 100
 
-output = (user_p * PENNY_VALUE) + (user_n * NICKEL_VALUE) + \
-              (user_d * DIME_VALUE) + (user_q * QUARTER_VALUE)
+output = (user_p * PENNY_VALUE) + (user_n * NICKEL_VALUE) + (user_d * DIME_VALUE) + (user_q * QUARTER_VALUE)
 
 total_dollars = output / PENNIES_IN_DOLLAR
 if total_dollars==1:
